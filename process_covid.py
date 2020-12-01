@@ -14,7 +14,127 @@ def load_covid_data(filepath):
     return input_data
 
 def cases_per_population_by_age(input_data):
-    raise NotImplementedError
+    # Get age bins provided in file
+    age_hos = input_data['metadata']['age_binning']['hospitalizations']
+    age_pop = input_data['metadata']['age_binning']['population']
+ 
+    if age_hos ==[] or age_pop ==[]:
+        raise NotImplementedError('Age bins are not provided for group')
+
+    # adjust age_bins
+    
+    a=age_hos[-1].split('-')
+    b=age_pop[-1].split('-')
+    a[-1]='150'
+    b[-1]='150'
+    age_hos[-1]='-'.join(a)
+    age_pop[-1]='-'.join(b)
+
+    if age_hos==age_pop:
+        age_bins=age_hos
+    else: # age_hos!=age_pop
+        
+        # get the data of age bins
+        data_age_hos=[]
+        for i in range(len(age_hos)):
+            data_age_hos.append([int(age_hos[i].split('-')[0]),int(age_hos[i].split('-')[1])])
+        data_age_hos
+        data_age_pop=[]
+        for j in range(len(age_pop)):
+            data_age_pop.append([int(age_pop[j].split('-')[0]),int(age_pop[j].split('-')[1])])
+        
+        # rebin age bins by compare the lower bound and upper bound of age bin
+        age_bins=[]
+        i=0
+        j=0
+        while i < len(data_age_hos) and j < len(data_age_pop):
+            # compare the lower bound of two age bins (3 situations)
+            if data_age_hos[i][0] == data_age_pop[j][0]:
+                # compare the upper bound of two age bins (3 situations)
+                if data_age_hos[i][1]==data_age_pop[j][1]:
+                    age_bins.append('-'.join([str(data_age_pop[j][0]),str(data_age_pop[j][1])]))
+                    i+=1
+                    j+=1
+                    
+                elif data_age_hos[i][1]<int(data_age_pop[j][1]):
+                    i+=1
+                else: # int(data_age_hos[i][1])>int(data_age_pop[j][1]):
+                    j+=1
+            
+            elif data_age_hos[i][0] > data_age_pop[j][0]:
+                if data_age_hos[i][1] > data_age_pop[j][1]:
+                    raise ValueError('rebin fail')
+                elif data_age_hos[i][1]< data_age_pop[j][1]:
+                    i+=1
+                else: # age_hos_i[1]==age_pop_j[1]:
+                    age_bins.append('-'.join([str(data_age_pop[j][0]),str(data_age_pop[j][1])]))
+                    i+=1
+                    j+=1
+                    
+
+            else: # data_age_hos[i][0] < data_age_pop[j][0]:
+                if data_age_hos[i][1]< data_age_pop[j][1]:
+                    raise ValueError('rebin fail')
+                elif data_age_hos[i][1] > data_age_pop[j][1]:
+                    j+=1
+                else: # age_hos_i[1]==age_pop_j[1]:
+                    age_bins.append('-'.join([str(data_age_hos[i][0]),str(data_age_hos[i][1])]))
+                    i+=1
+                    j+=1
+
+
+    # recover the original 
+    a=age_hos[-1].split('-')
+    a[-1]=''
+    age_hos[-1]='-'.join(a)
+    input_data['metadata']['age_binning']['hospitalizations']=age_hos
+
+    b=age_pop[-1].split('-')
+    b[-1]=''
+    age_pop[-1]='-'.join(b)
+    input_data['metadata']['age_binning']['population']=age_pop
+
+    # get result: rebin of age groups
+    c=age_bins[-1].split('-')
+    c[-1]=''
+    age_bins[-1]='-'.join(c)
+
+
+
+    # create the list of date and total of confirmed epidemiology
+    date=[]
+    data_con_byAge=[]
+    for key in input_data['evolution']:
+        # raise error when the age group is not provided
+        if 'age' not in input_data['evolution'][key]['epidemiology']['confirmed']['total']:
+            raise NotImplementedError('the age group of confirmed epidemiology is not provided')
+            
+        # data of confirmed epidemiology is none, continue
+        elif input_data['evolution'][key]['epidemiology']['confirmed']['total']['age']==None\
+        or input_data['evolution'][key]['epidemiology']['confirmed']['total']['age']==[]\
+        or None in input_data['evolution'][key]['epidemiology']['confirmed']['total']['age']:
+            continue
+            
+        else: # data of confirmed epidemiology is valid
+            date.append(key)
+            data_con_byAge.append(input_data['evolution'][key]['epidemiology']['confirmed']['total']['age'])
+    
+    # create rate of people hospitalised and confirmed cases everyday by age_bins
+    i_age=0
+    i_date=0
+    ratio_DateByAge=[]
+    result={}
+    for i_age in range(len(age_bins)):
+        if input_data["region"]["population"]["age"][i_age]==None or input_data["region"]["population"]["age"][i_age]==[]:
+            raise NotImplementedError('the population of age group is not provided')
+        else:
+            ratio_DateByAge=[]
+            for i_date in range(len(date)):
+                ratio_date=(date[i_date],data_con_byAge[i_date][i_age]/input_data["region"]["population"]["age"][i_age])
+                ratio_DateByAge.append(ratio_date)
+            result.update({age_bins[i_age]:ratio_DateByAge})
+    return result
+
 
 def hospital_vs_confirmed(input_data):
     raise NotImplementedError
