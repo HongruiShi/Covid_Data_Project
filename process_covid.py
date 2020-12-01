@@ -119,8 +119,38 @@ def cases_per_population_by_age(input_data):
     return result
 
 
+
 def hospital_vs_confirmed(input_data):
-    raise NotImplementedError
+    date=[]
+    data_evo=[]
+
+    for key in input_data['evolution']:
+        # numerator is 0 or None
+        if input_data['evolution'][key]['hospitalizations']['hospitalized']['new']['all']==0\
+        or input_data['evolution'][key]['hospitalizations']['hospitalized']['new']['all'] is None:
+            continue
+        # denominator is 0 or None
+        if input_data['evolution'][key]['epidemiology']['confirmed']['new']['all']==0\
+        or input_data['evolution'][key]['epidemiology']['confirmed']['new']['all'] is None:
+            continue
+        # data is empty
+        if input_data['evolution'][key]['hospitalizations']['hospitalized']['new'] is None\
+        or input_data['evolution'][key]['epidemiology']['confirmed']['new'] is None:
+            continue
+        # classification is empty
+        if 'new' not in input_data['evolution'][key]['hospitalizations']['hospitalized'].keys()\
+        or 'new' not in input_data['evolution'][key]['epidemiology']['confirmed'].keys():
+            continue
+        # create the list of date and ratio
+        if input_data['evolution'][key]['hospitalizations']['hospitalized']['new']['all'] is not None and input_data['evolution'][key]['hospitalizations']['hospitalized']['new']['all']!=0:
+            if input_data['evolution'][key]['epidemiology']['confirmed']['new']['all'] is not None and input_data['evolution'][key]['epidemiology']['confirmed']['new']['all'] !=0:
+                date.append(key)
+                data_evo.append(input_data['evolution'][key]['hospitalizations']['hospitalized']['new']['all']/input_data['evolution'][key]['epidemiology']['confirmed']['new']['all'])
+    
+    result=(date,data_evo)
+    return result
+
+
 
 def generate_data_plot_confirmed(input_data, sex, max_age, status):
     """
