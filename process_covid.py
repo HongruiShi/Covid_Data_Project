@@ -1,7 +1,17 @@
 # FIXME add needed imports
+import json
+from matplotlib import pyplot as plt
+import pytest
+
 
 def load_covid_data(filepath):
-    raise NotImplementedError
+    with open(filepath, 'r') as jason_file:
+        input_data_as_string = jason_file.read()
+        try:
+            input_data = json.loads(input_data_as_string)
+        except:
+            raise NotImplementedError('The file is not json format')
+    return input_data
 
 def cases_per_population_by_age(input_data):
     raise NotImplementedError
