@@ -317,6 +317,9 @@ def compute_running_average(data_tested,size_window):
         sum_rainfall=0
         if data_tested[i]!=None:
             for j in range(-int((size_window-1)/2),int((size_window-1)/2)+1):
+                if data_tested[i+j]==None:
+                    data_tested[i+j]=0
+                    continue  
                 sum_rainfall+=data_tested[i+j]
                 average_rainfall=sum_rainfall/(size_window)
             list_sum_rainfall.append(average_rainfall)
