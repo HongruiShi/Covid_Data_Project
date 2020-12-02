@@ -233,8 +233,9 @@ def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=.
         raise NotImplementedError('at most one of sex or max_age allowed at a time')
     if not sex and not max_ages:
         raise NotImplementedError('both of sex and max_age are not provided')
-    if sex is not ['male', 'female', False] and max_ages is None:
-        raise NotImplementedError('age or sex data are error')
+    if sex > 1:
+        raise Exception('sex error')
+
     # set default status
     if status != 'new':
         status = 'total'
@@ -244,63 +245,48 @@ def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=.
     # set figure size
     fig = plt.figure(figsize=(10, 10))
 
-    age_bin=input_data['metadata']['age_binning']['population']
-    # figure of sex classification
+    # get age ranges
+    age_bin = input_data['metadata']['age_binning']['hospitalizations']
+
+    # FIXME change logic so this runs only when the sex plot is required
     if sex:
-        if status !='new':
-            for sex in ['male','female']:
-                if sex=='male':
-                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, sex, [],status),'#800080',linestyle='-',label="total male")
-                if sex=='female':
-                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, sex, [],status),'#008000',linestyle='-',label="total female")
-        
-        if status=='new':
-            for sex in ['male','female']:
-                if sex=='male':
-                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, sex, [],status),'#800080',linestyle='--',label="new male")
-                if sex=='female':
-                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, sex, [],status),'#008000',linestyle='--',label="new female")
+        for sex in ['male','female']:
+            date,values = generate_data_plot_confirmed(input_data,sex,False)
+            if sex=='female':
+                colour_values="purple"
+            if sex=='male':
+                colour_values='green'
+            
+            if status=='new':
+                linestyle_values='--'
+            else:
+                linestyle_values='-'
+            plt.plot(date,values,label=status+" "+sex,color=colour_values,linestyle=linestyle_values)
+            save_path = input_data + 'evolution_by_sex_groups' 
 
-        plt.title("Confirmed cases in" + input_data['region']['name'])
-        plt.xlabel("Dates")
-        plt.ylabel("Number of cases")
-        plt.legend(loc='upper left')
-        
-    # figure of age classification
-    if sex==False:
-        if status != 'new':
-            for max_age in max_ages:
-                if max_age<int(age_bin[1].split('-')[0]):
-                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#008000',linestyle='-',label="total younger than 25")
-                if int(age_bin[1].split('-')[0])<max_age<=int(age_bin[2].split('-')[0]):
-                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#FFA500',linestyle='-',label="total younger than 50")
+    # FIXME change logic so this runs only when the age plot is required
+    if max_ages:
+        for max_age in max_ages:
+            (date,values,label_values,colour_values,linestyle_values) = generate_data_plot_confirmed(input_data, None, max_age, status)
+            plt.plot(date,values,label=label_values,color=colour_values,linestyle=linestyle_values)
+            save_path = input_data + 'evolution_by_age_ranges' 
 
-                             
-                if int(age_bin[2].split('-')[0]) <max_age <= int(age_bin[3].split('-')[0]):
-                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#800080',linestyle='-',label="total younger than 75")
-                if max_age>int(age_bin[3].split('-')[0]):
-                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#FFC0CB',linestyle='-',label="total older than 57")
+    fig.autofmt_xdate()  # To show dates nicely
+    # TODO add title with "Confirmed cases in ..."
+    plt.title('Confirmed cases in' + input_data['region']['name'])
+    # TODO Add x label to inform they are dates
+    plt.xlabel('Date')
+    # TODO Add y label to inform they are number of cases
+    plt.ylabel('Cases')
+    # TODO Add legend
+    plt.legend(loc='upper left')
+    # TODO Change logic to show or save it into a '{region_name}_evolution_cases_{type}.png'
+    #      where type may be sex or age
+    if save:
+        plt.savefig(save_path)
+    else:
+        plt.show()
 
-                 
-                
-        if status == 'new':
-            for max_age in max_ages:
-                             
-                if max_age<=int(age_bin[1].split('-')[0]):
-                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#008000',linestyle='--',label="new younger than 25")
-                if int(age_bin[1].split('-')[0])<max_age<=int(age_bin[2].split('-')[0]):
-                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#FFA500',linestyle='--',label="new younger than 50")
-                if int(age_bin[2].split('-')[0])<max_age<=int(age_bin[3].split('-')[0]):
-                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#800080',linestyle='--',label="new younger than 75")
-
-                if int(age_bin[3].split('-')[0])<max_age:
-                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#FFC0CB',linestyle='--',label="new older than 57")
-        plt.xlabel("date")
-        plt.ylabel("number of cases")
-        plt.title("Confirmed cases " + input_data['region']['name'])
-        plt.legend(loc='upper left')
-
-    plt.show()
 
 
 def compute_running_average(data_tested,size_window):
