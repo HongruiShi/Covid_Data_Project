@@ -150,16 +150,82 @@ def hospital_vs_confirmed(input_data):
     result=(date,data_evo)
     return result
 
-
-
-def generate_data_plot_confirmed(input_data, sex, max_age, status):
+def generate_data_plot_confirmed(input_data, sex, max_age,status):
     """
     At most one of sex or max_age allowed at a time.
     sex: only 'male' or 'female'
     max_age: sums all bins below this value, including the one it is in.
     status: 'new' or 'total' (default: 'total')
     """
-    raise NotImplementedError
+
+    age_bin=input_data['metadata']['age_binning']['population']
+    
+    # set default status
+    if status != 'new':
+        status = 'total'
+    else:
+        status='new'
+
+    # set classification to plot
+    if sex==True and max_age==True:
+        raise NotImplementedError('at most one of sex or max_age allowed at a time')
+    if not sex and not max_age:
+        raise NotImplementedError('both of sex and max_age are not provided')
+    if sex is not ['male', 'female', False] and max_age is None:
+        raise NotImplementedError('age or sex data are error')
+    
+
+    # sex classification
+    data_con_sex=[]
+    if sex:
+        for key in input_data['evolution']:
+            if  input_data['evolution'][key]['epidemiology']['confirmed'][status][sex]==None:
+                continue
+            data_con_sex.append(input_data['evolution'][key]['epidemiology']['confirmed'][status][sex])
+        return data_con_sex
+
+        # age classification
+    else:
+        if max_age<=int(age_bin[1].split('-')[0]):
+            data_con_age=[]
+            for key in input_data['evolution']:
+                sum_con_age=0
+                if input_data['evolution'][key]['epidemiology']['confirmed'][status]['age']==None or\
+                    input_data['evolution'][key]['epidemiology']['confirmed'][status]['age']==[]:
+                        continue
+                data_con_age.append(input_data['evolution'][key]['epidemiology']['confirmed'][status]['age'][0])
+        if int(age_bin[1].split('-')[0])<max_age<=int(age_bin[2].split('-')[0]):
+            data_con_age=[]
+            for key in input_data['evolution']:
+                sum_con_age=0
+                for age in range(2):
+                    if input_data['evolution'][key]['epidemiology']['confirmed'][status]['age']==None or\
+                    input_data['evolution'][key]['epidemiology']['confirmed'][status]['age']==[]:
+                        continue
+                    sum_con_age+=input_data['evolution'][key]['epidemiology']['confirmed'][status]['age'][age]
+                data_con_age.append(sum_con_age)
+        if int(age_bin[2].split('-')[0])<max_age<=int(age_bin[3].split('-')[0]):
+            data_con_age=[]
+            for key in input_data['evolution']:
+                sum_con_age=0
+                for age in range(3):
+                    if input_data['evolution'][key]['epidemiology']['confirmed'][status]['age']==None or\
+                    input_data['evolution'][key]['epidemiology']['confirmed'][status]['age']==[]:
+                        continue
+                    sum_con_age+=input_data['evolution'][key]['epidemiology']['confirmed'][status]['age'][age]
+                data_con_age.append(sum_con_age)
+        if max_age>int(age_bin[3].split('-')[0]):
+            data_con_age=[]
+            for key in input_data['evolution']:
+                sum_con_age=0
+                for age in range(4):
+                    if input_data['evolution'][key]['epidemiology']['confirmed'][status]['age']==None or\
+                    input_data['evolution'][key]['epidemiology']['confirmed'][status]['age']==[]:
+                        continue
+                    sum_con_age+=input_data['evolution'][key]['epidemiology']['confirmed'][status]['age'][age]
+                data_con_age.append(sum_con_age)
+        return data_con_age
+
 
 def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=...):
     # FIXME check that only sex or age is specified.
