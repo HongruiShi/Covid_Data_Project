@@ -229,26 +229,118 @@ def generate_data_plot_confirmed(input_data, sex, max_age,status):
 
 def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=...):
     # FIXME check that only sex or age is specified.
+    if sex==True and max_ages==True:
+        raise NotImplementedError('at most one of sex or max_age allowed at a time')
+    if not sex and not max_ages:
+        raise NotImplementedError('both of sex and max_age are not provided')
+    if sex is not ['male', 'female', False] and max_ages is None:
+        raise NotImplementedError('age or sex data are error')
+    # set default status
+    if status != 'new':
+        status = 'total'
+    else:
+        status='new'
+
+    # set figure size
     fig = plt.figure(figsize=(10, 10))
-    # FIXME change logic so this runs only when the sex plot is required
-    for sex in ['male', 'female']:
-        # FIXME need to change `changeme` so it uses generate_data_plot_confirmed
-        plt.plot('date', 'value', )
-    # FIXME change logic so this runs only when the age plot is required
-    for age in max_ages:
-        # FIXME need to change `changeme` so it uses generate_data_plot_confirmed
-        plt.plot('date', 'value', )
-    fig.autofmt_xdate()  # To show dates nicely
-    # TODO add title with "Confirmed cases in ..."
-    # TODO Add x label to inform they are dates
-    # TODO Add y label to inform they are number of cases
-    # TODO Add legend
-    # TODO Change logic to show or save it into a '{region_name}_evolution_cases_{type}.png'
-    #      where type may be sex or age
+
+    age_bin=input_data['metadata']['age_binning']['population']
+    # figure of sex classification
+    if sex:
+        if status !='new':
+            for sex in ['male','female']:
+                if sex=='male':
+                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, sex, [],status),'#800080',linestyle='-',label="total male")
+                if sex=='female':
+                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, sex, [],status),'#008000',linestyle='-',label="total female")
+        
+        if status=='new':
+            for sex in ['male','female']:
+                if sex=='male':
+                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, sex, [],status),'#800080',linestyle='--',label="new male")
+                if sex=='female':
+                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, sex, [],status),'#008000',linestyle='--',label="new female")
+
+        plt.title("Confirmed cases in" + input_data['region']['name'])
+        plt.xlabel("Dates")
+        plt.ylabel("Number of cases")
+        plt.legend(loc='upper left')
+        
+    # figure of age classification
+    if sex==False:
+        if status != 'new':
+            for max_age in max_ages:
+                if max_age<int(age_bin[1].split('-')[0]):
+                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#008000',linestyle='-',label="total younger than 25")
+                if int(age_bin[1].split('-')[0])<max_age<=int(age_bin[2].split('-')[0]):
+                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#FFA500',linestyle='-',label="total younger than 50")
+
+                             
+                if int(age_bin[2].split('-')[0]) <max_age <= int(age_bin[3].split('-')[0]):
+                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#800080',linestyle='-',label="total younger than 75")
+                if max_age>int(age_bin[3].split('-')[0]):
+                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#FFC0CB',linestyle='-',label="total older than 57")
+
+                 
+                
+        if status == 'new':
+            for max_age in max_ages:
+                             
+                if max_age<=int(age_bin[1].split('-')[0]):
+                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#008000',linestyle='--',label="new younger than 25")
+                if int(age_bin[1].split('-')[0])<max_age<=int(age_bin[2].split('-')[0]):
+                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#FFA500',linestyle='--',label="new younger than 50")
+                if int(age_bin[2].split('-')[0])<max_age<=int(age_bin[3].split('-')[0]):
+                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#800080',linestyle='--',label="new younger than 75")
+
+                if int(age_bin[3].split('-')[0])<max_age:
+                    plt.plot(list(input_data['evolution'].keys()),generate_data_plot_confirmed(input_data, False, max_age,status),'#FFC0CB',linestyle='--',label="new older than 57")
+        plt.xlabel("date")
+        plt.ylabel("number of cases")
+        plt.title("Confirmed cases " + input_data['region']['name'])
+        plt.legend(loc='upper left')
+
     plt.show()
 
-def compute_running_average(data, window):
-    raise NotImplementedError
+
+def compute_running_average(data_tested,size_window):
+
+
+    if isinstance(data_tested, list) == 0:
+        raise NotImplementedError('inproper data type')
+    if size_window % 2 == 0 or size_window <= 0:
+        raise NotImplementedError('The window size should be a positive odd number.')
+        
+        
+    sum_rainfall=None
+    list_sum_rainfall=[]
+    average_rainfall=[]
+    i=0
+    for i in range(int((size_window-1)/2)):
+        sum_rainfall=None
+        list_sum_rainfall.append(sum_rainfall)
+
+    for i in range(int((size_window-1)/2),len(data_tested)-int((size_window-1)/2)):
+        sum_rainfall=0
+        if data_tested[i]!=None:
+            for j in range(-int((size_window-1)/2),int((size_window-1)/2)+1):
+                sum_rainfall+=data_tested[i+j]
+                average_rainfall=sum_rainfall/(size_window)
+            list_sum_rainfall.append(average_rainfall)
+        if data_tested[i]==None:
+            for j in range(-int((size_window-1)/2),int((size_window-1)/2)+1):
+                data_tested[i]=0
+                sum_rainfall+=data_tested[i+j]
+                average_rainfall=sum_rainfall/(size_window)
+            list_sum_rainfall.append(average_rainfall)
+
+
+
+    for i in range(len(data_tested)-int((size_window-1)/2),len(data_tested)):
+        sum_rainfall=None
+        list_sum_rainfall.append(sum_rainfall)
+        
+    return list_sum_rainfall
 
 def simple_derivative(data):
     raise NotImplementedError
