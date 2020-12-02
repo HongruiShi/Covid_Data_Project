@@ -350,4 +350,28 @@ def simple_derivative(data):
     return list_data_derivative
 
 def count_high_rain_low_tests_days(input_data):
-    raise NotImplementedError
+    data_rainfall=[]
+    for key in input_data['evolution']:
+        data_rainfall.append(input_data['evolution'][key]['weather']['rainfall'])
+
+    data_tested=[]
+    for key in input_data['evolution']:
+        data_tested.append(input_data['evolution'][key]['epidemiology']['tested']['new']['all'])
+
+
+    data_test_smooth = compute_running_average(data_tested,7)
+    data_test_deri= simple_derivative(data_test_smooth)
+    
+    # figure out the rain increase
+    data_rain_deri = simple_derivative(data_rainfall)
+
+    # find out the increase in rain while decrease in test
+    data_rain_inc=0
+    data_rain_inc_test_dec=0
+    for i in range(len(data_rain_deri)):
+        if data_rain_deri[i] != None and data_rain_deri[i] > 0:
+            data_rain_inc+=1
+            if data_test_deri[i] != None and data_test_deri[i] < 0:
+                data_rain_inc_test_dec = data_rain_inc_test_dec+1
+    return data_rain_inc_test_dec/data_rain_inc
+
