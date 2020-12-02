@@ -339,7 +339,15 @@ def compute_running_average(data_tested,size_window):
     return list_sum_rainfall
 
 def simple_derivative(data):
-    raise NotImplementedError
+    if isinstance(data, list) == 0:
+        raise NotImplementedError("wrong data")
+    list_data_derivative=[None]
+    for i in range(1,len(data)):
+        if data[i] == None or data[i-1]==None:
+            list_data_derivative.append(None)
+        else:
+            list_data_derivative.append(data[i] - data[i-1])
+    return list_data_derivative
 
 def count_high_rain_low_tests_days(input_data):
     raise NotImplementedError
