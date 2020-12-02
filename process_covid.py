@@ -233,11 +233,11 @@ def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=.
     # FIXME change logic so this runs only when the sex plot is required
     for sex in ['male', 'female']:
         # FIXME need to change `changeme` so it uses generate_data_plot_confirmed
-        plt.plot('date', 'value', changeme)
+        plt.plot('date', 'value', )
     # FIXME change logic so this runs only when the age plot is required
     for age in max_ages:
         # FIXME need to change `changeme` so it uses generate_data_plot_confirmed
-        plt.plot('date', 'value', changeme)
+        plt.plot('date', 'value', )
     fig.autofmt_xdate()  # To show dates nicely
     # TODO add title with "Confirmed cases in ..."
     # TODO Add x label to inform they are dates
