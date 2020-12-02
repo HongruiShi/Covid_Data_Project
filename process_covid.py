@@ -125,6 +125,8 @@ def cases_per_population_by_age(input_data):
                     age_pop_end=k+1
 
             data_con=sum(values["epidemiology"]["confirmed"]["total"]["age"][age_pop_start:age_pop_end])
+            if None in input_data["region"]["population"]["age"]:
+                break
             data_pop=sum(input_data["region"]["population"]["age"][age_pop_start:age_pop_end])
             # calculate the ratios by date in age ranges
             result.get(age_bins[i]).append((dates, data_con * 100 / data_pop))
