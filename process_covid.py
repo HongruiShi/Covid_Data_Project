@@ -245,9 +245,6 @@ def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=.
     # set figure size
     fig = plt.figure(figsize=(10, 10))
 
-    # get age ranges
-    age_bin = input_data['metadata']['age_binning']['hospitalizations']
-
     # FIXME change logic so this runs only when the sex plot is required
     if sex:
         for sex in ['male','female']:
