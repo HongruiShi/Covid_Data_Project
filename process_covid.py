@@ -5,13 +5,68 @@ from matplotlib import pyplot as plt
 
 
 def load_covid_data(filepath):
-    with open(filepath, 'r') as jason_file:
-        input_data_as_string = jason_file.read()
-        try:
+    try:
+        with open(filepath, 'r') as jason_file:
+            input_data_as_string = jason_file.read()
             input_data = json.loads(input_data_as_string)
-        except:
-            raise NotImplementedError('The file is not json format')
-    return input_data
+        if not check_schema(input_data):
+            raise NotImplementedError("The file does not conform to the schema\n")
+        return input_data
+    except:
+        raise NotImplementedError('The file is not json format')
+
+def check_schema(data_json):
+    # check "metadata","region","evolution"
+    first_layer=["metadata","region","evolution"]
+    for field_1 in first_layer:
+        if not isinstance(data_json[field_1],dict):
+            return False, "%s should be a dict" % field_1 
+
+    # check 'time-range','age_binning'
+    sub_metadata=['time-range','age_binning']
+    for field_sub_1 in sub_metadata:
+        if not isinstance(data_json['metadata'][field_sub_1],dict):
+            return False, "%s should be a dict" % field_sub_1
+    
+    # check "hospitalizations" and "population" in 'age_binning'
+    sub_age_binning=["hospitalizations" , "population"]
+    for field_sub_2 in sub_age_binning:
+        if not isinstance(data_json['metadata']['age_binning'][field_sub_2],list):
+            return False, "%s should be a list" % field_sub_2
+    
+    # check 'populatin' in "region"
+    sub_pop_region=["total","male","female","age"]
+    for sub_pop in sub_pop_region:
+        if sub_pop not in data_json["region"]["population"]:
+            return False,"%s is not in population" %sub_pop
+    
+    # check key(date),"hospitalizations","epidemiology","weather" in "evolution"
+    sub_evolution = ["hospitalizations","epidemiology", "weather", "government_response"]
+    sub_epidemiology = ['confirmed','deceased','tested']
+    for date,v in data_json["evolution"].items():
+        if not date:
+            return False, "date is wrong"
+        if not isinstance(v, dict):
+            return False, "content of %s is wrong" % date
+        
+        for sub in sub_evolution:
+            if not isinstance(v[sub], dict):
+                return False, "format of %s in %s is wrong" % (sub,date)
+    
+        # check "hospitalized" in "hospitalizations"
+        if 'hospitalized'  not in v['hospitalizations']:
+            return False, 'hospitalized is not in %s' %date
+    
+    # check "confirmed","deceased","tested" in "epidemiology"
+    
+        for sub in sub_epidemiology:
+            if sub not in v['epidemiology']:
+                return False, "%s is not in epidemiology" %sub
+            else:
+                if not isinstance(sub, dict):
+                    return False, "format of %s is wrong" % sub
+    return True
+
 
 def cases_per_population_by_age(input_data):
     age_hos = input_data['metadata']['age_binning']['hospitalizations']
