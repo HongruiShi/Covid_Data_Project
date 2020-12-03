@@ -178,10 +178,12 @@ def generate_data_plot_confirmed(input_data, sex, max_age,status):
         status='new'
 
     # set classification to plot
-    if sex==True and max_age==True:
+    if sex and max_age:
         raise NotImplementedError('at most one of sex or max_age allowed at a time')
     if not sex and not max_age:
         raise NotImplementedError('both of sex and max_age are not provided')
+    if sex not in ['male', 'female', False] and max_age==[]:
+        raise NotImplementedError('age or sex data are error')
 
     # set return result
     x_date=[]
@@ -193,6 +195,9 @@ def generate_data_plot_confirmed(input_data, sex, max_age,status):
     # sex classification
     if sex:
         for key in input_data['evolution'].keys():
+            if input_data['evolution'][key]['epidemiology']['confirmed'][status][sex] is None:
+                y_value.append(None)
+                continue
             y_value.append(input_data['evolution'][key]['epidemiology']['confirmed'][status][sex])
 
     # age classification
