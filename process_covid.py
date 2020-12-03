@@ -357,10 +357,10 @@ def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=.
 
 
 
-def compute_running_average(data_tested,size_window):
-    if isinstance(data_tested, list) == 0:
+def compute_running_average(data,window):
+    if isinstance(data, list) == 0:
         raise NotImplementedError('inproper data type')
-    if size_window % 2 == 0 or size_window <= 0:
+    if window % 2 == 0 or window <= 0:
         raise NotImplementedError('The window size should be a positive odd number.')
         
     
@@ -369,30 +369,30 @@ def compute_running_average(data_tested,size_window):
     average_rainfall=[]
     i=0
     # set the beginning None
-    for i in range(int((size_window-1)/2)):
+    for i in range(int((window-1)/2)):
         sum_rainfall=None
         list_sum_rainfall.append(sum_rainfall)
 
-    for i in range(int((size_window-1)/2),len(data_tested)-int((size_window-1)/2)):
+    for i in range(int((window-1)/2),len(data)-int((window-1)/2)):
         sum_rainfall=0
-        if data_tested[i]!=None:
-            for j in range(-int((size_window-1)/2),int((size_window-1)/2)+1):
-                if data_tested[i+j]==None:
-                    data_tested[i+j]=0
+        if data[i]!=None:
+            for j in range(-int((window-1)/2),int((window-1)/2)+1):
+                if data[i+j]==None:
+                    data[i+j]=0
                     continue  
-                sum_rainfall+=data_tested[i+j]
-                average_rainfall=sum_rainfall/(size_window)
+                sum_rainfall+=data[i+j]
+                average_rainfall=sum_rainfall/(window)
             list_sum_rainfall.append(average_rainfall)
-        if data_tested[i]==None:
-            for j in range(-int((size_window-1)/2),int((size_window-1)/2)+1):
-                data_tested[i]=0
-                sum_rainfall+=data_tested[i+j]
-                average_rainfall=sum_rainfall/(size_window)
+        if data[i]==None:
+            for j in range(-int((window-1)/2),int((window-1)/2)+1):
+                data[i]=0
+                sum_rainfall+=data[i+j]
+                average_rainfall=sum_rainfall/(window)
             list_sum_rainfall.append(average_rainfall)
 
 
     # set the ending None
-    for i in range(len(data_tested)-int((size_window-1)/2),len(data_tested)):
+    for i in range(len(data)-int((window-1)/2),len(data)):
         sum_rainfall=None
         list_sum_rainfall.append(sum_rainfall)
         
