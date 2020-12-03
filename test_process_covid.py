@@ -98,12 +98,12 @@ def test_generate_data_plot_confirm_missing_data():
 
 
 
-def test_generate_data_plot_confirmed_wrong_parameter():
+def test_generate_data_plot_confirmed_wrong_argument():
     data_er = process_covid.load_covid_data('covid_data/ER-Mi-EV_2020-03-16_2020-04-24.json')
     # sex or max_age allowed at the same time
     with raises(NotImplementedError):
         process_covid.generate_data_plot_confirmed(data_er, 'male',60, 'total')
-        process_covid.generate_data_plot_confirmed(data_er, 1, None, 'total')
+        process_covid.generate_data_plot_confirmed(data_er, 4, None, 'total')
         process_covid.generate_data_plot_confirmed(data_er, None, [], 'total')
 
 
