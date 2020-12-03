@@ -1,4 +1,3 @@
-import json
 import pytest
 from pytest import raises
 from process_covid import (load_covid_data,

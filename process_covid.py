@@ -1,7 +1,7 @@
 # FIXME add needed imports
 import json
 from matplotlib import pyplot as plt
-import pytest
+
 
 
 def load_covid_data(filepath):
