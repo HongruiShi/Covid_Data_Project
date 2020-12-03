@@ -1,5 +1,6 @@
 import pytest
 from pytest import raises
+import process_covid
 from process_covid import (load_covid_data,
                            cases_per_population_by_age,
                            hospital_vs_confirmed,
@@ -14,22 +15,6 @@ def test_load_covid_data():
     data_json = process_covid.load_covid_data('covid_data/ER-Mi-EV_2020-03-16_2020-04-24.json')
     assert data_json is not None
 
-
-def test_hospital_vs_confirmed():
-    data_er = process_covid.load_covid_data('covid_data/ER-Mi-EV_2020-03-16_2020-04-24.json')
-    date_origin, ratio_dateByAge_origin = hospital_vs_confirmed(data_er)
-    del (date_origin[0:2])
-    del (ratio_dateByAge_origin[0:2])
-
-    data_er['evolution']['2020-03-16']['hospitalizations']['hospitalized']['new']['all']=None
-    data_er['evolution']['2020-03-17']['epidemiology']['confirmed']['new']['all']=None
-    date_test, ratio_dateByAge_test = hospital_vs_confirmed(data_er)
-    try:
-        assert date_origin == date_test
-        assert ratio_dateByAge_origin == ratio_dateByAge_test
-    except NotImplementedError:
-        print('the result is not correct because of missing data')
-    print('the result is correct when there is missing data')
 
 
 def test_rebin():
@@ -49,9 +34,9 @@ def test_rebin():
     
     try:
         assert age_bins_original == result_correct
+        print('correct result')
     except NotImplementedError:
         print('wrong result')
-    print('correct result')
 
     #test 2
     A = ['0-14', '15-29', '30-44', '45-']
