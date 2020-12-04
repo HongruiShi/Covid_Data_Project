@@ -9,9 +9,9 @@ def load_covid_data(filepath):
         with open(filepath, 'r') as jason_file:
             input_data_as_string = jason_file.read()
             input_data = json.loads(input_data_as_string)
-        exist, false = check_schema(input_data)
-        if(exist == False):
-             raise Exception(false)
+        conform, uncon = check_schema(input_data)
+        if(conform == False):
+             raise Exception(uncon)
         return input_data
     except:
         raise NotImplementedError('The file is not json format')
@@ -311,13 +311,10 @@ def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=.
         status='new'
         linestyle_value = '--'
 
-        
-
     # set figure size
     fig = plt.figure(figsize=(10, 10))
 
     # FIXME change logic so this runs only when the sex plot is required
-
     if sex:
         for sex in ['male','female']:
             if sex == 'female':
@@ -326,11 +323,11 @@ def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=.
                 color_value = 'green'
 
             date,value = generate_data_plot_confirmed(input_data,sex,None,status)
-            plt.plot(date,value,label=status+" "+sex,color=color_value,linestyle=linestyle_value)
+            data={'date':date,'value':value}
+            plt.plot('date','value',label=status+" "+sex,color=color_value,linestyle=linestyle_value,data=data)
         save_path = input_data['region']['name'] + '_evolution_cases_sex.png' 
 
     # FIXME change logic so this runs only when the age plot is required
-
     if max_ages:
         for max_age in max_ages:
             age_groups=input_data['metadata']['age_binning']['population']
@@ -344,7 +341,7 @@ def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=.
                     age_label=int(age_groups[i].split('-')[1])
             label_values = 'younger than'+' '+str(age_label)+' '+status
             date,value = generate_data_plot_confirmed(input_data,None,max_age,status)
-            
+            data={'date':date,'value':value}
             if 50<=max_age<75:
                 color_value='purple'
             if 25<=max_age<50:
@@ -353,10 +350,7 @@ def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=.
                 color_value = 'green'
             if 75<=max_age<150:
                 color_value='pink'
-
-        
-            
-            plt.plot(date,value,label=label_values,color=color_value,linestyle=linestyle_value)
+            plt.plot('date','value',label=label_values,color=color_value,linestyle=linestyle_value,data=data)
         save_path = input_data['region']['name'] + '_evolution_cases_age.png'
 
     fig.autofmt_xdate()  # To show dates nicely
