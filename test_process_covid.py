@@ -153,8 +153,6 @@ def test_compute_running_average():
     # forth test with even window 2
     try:
         input4 = [2,None,4]
-        output4 = []
-        output4_test =[None, 2.0, None]
         with raises(NotImplementedError):
             process_covid.compute_running_average(input4,2)
         print('correct output')
