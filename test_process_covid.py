@@ -16,6 +16,14 @@ def test_load_covid_data():
     assert data_er is not None
 
 
+def test_load_covid_data_conform_schema():
+    try:
+        with raises(Exception):
+            process_covid.load_covid_data('covid_data/test.json')
+        print('schema work')
+    except NotImplementedError:
+        print('schema does not work')
+
 
 def test_rebin():
     # test 1

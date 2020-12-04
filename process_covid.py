@@ -86,10 +86,11 @@ def cases_per_population_by_age(input_data):
     age_pop = input_data['metadata']['age_binning']['population']
     if age_hos==[] or age_pop==[]:
         raise NotImplementedError('Age group is not been provided')
-    # age groups are same
+    # age bins are equal
     if age_hos==age_pop:
         age_bins=age_hos
-    # age groups are not same, rebin them
+
+    # age bins are different, rebin them
     # replace the last age '-' with '150'
     if age_hos!=age_pop:
         a=age_hos[-1].split('-')
@@ -125,7 +126,7 @@ def cases_per_population_by_age(input_data):
 
             elif data_age_hos[i][0] < data_age_pop[j][0]:
                 if data_age_hos[i][1]< data_age_pop[j][1]:
-                    raise ValueError('rebin fail')
+                    raise ValueError('rebin fail,the bins are incompatible')
                 elif data_age_hos[i][1] > data_age_pop[j][1]:
                     j+=1
                 else: # age_hos_i[1]==age_pop_j[1]:
@@ -135,7 +136,7 @@ def cases_per_population_by_age(input_data):
 
             else: # data_age_hos[i][0] > data_age_pop[j][0]:
                 if data_age_hos[i][1] > data_age_pop[j][1]:
-                    raise ValueError('rebin fail')
+                    raise ValueError('rebin fail,the bins are incompatible')
                 elif data_age_hos[i][1]< data_age_pop[j][1]:
                     i+=1
                 else: # age_hos_i[1]==age_pop_j[1]:
@@ -250,7 +251,7 @@ def generate_data_plot_confirmed(input_data, sex, max_age,status):
     else:
         status='new'
 
-    # set classification to plot
+    # check the validity of the combination of the arguments
     if sex and max_age:
         raise NotImplementedError('at most one of sex or max_age allowed at a time')
     if not sex and not max_age:
@@ -373,6 +374,7 @@ def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=.
 
 
 def compute_running_average(data,window):
+    # check the validity of the inputs
     if isinstance(data, list) == 0:
         raise NotImplementedError('inproper data type')
     if window % 2 == 0 or window <= 0:
@@ -407,7 +409,6 @@ def compute_running_average(data,window):
                 sum_rainfall+=data[i+j]
                 average_rainfall=sum_rainfall/(window)
             list_sum_rainfall.append(average_rainfall)
-
 
     # set the ending None
     for i in range(len(data)-int((window-1)/2),len(data)):
