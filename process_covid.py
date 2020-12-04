@@ -69,12 +69,16 @@ def check_schema(data_json):
 
 
 def cases_per_population_by_age(input_data):
+    # rebin the dataset of age
     age_hos = input_data['metadata']['age_binning']['hospitalizations']
     age_pop = input_data['metadata']['age_binning']['population']
     if age_hos==[] or age_pop==[]:
-        raise NotImplementedError('Age groups are not been provided')
+        raise NotImplementedError('Age group is not been provided')
+    # age groups are same
     if age_hos==age_pop:
         age_bins=age_hos
+    # age groups are not same, rebin them
+    # replace the last age '-' with '150'
     if age_hos!=age_pop:
         a=age_hos[-1].split('-')
         b=age_pop[-1].split('-')
@@ -82,7 +86,7 @@ def cases_per_population_by_age(input_data):
         b[-1]='150'
         age_hos[-1]='-'.join(a)
         age_pop[-1]='-'.join(b)
-
+    # get the operable age bins
         data_age_hos=[]
         for i in range(len(age_hos)):
             data_age_hos.append([int(age_hos[i].split('-')[0]),int(age_hos[i].split('-')[1])])
@@ -91,7 +95,7 @@ def cases_per_population_by_age(input_data):
         for j in range(len(age_pop)):
             data_age_pop.append([int(age_pop[j].split('-')[0]),int(age_pop[j].split('-')[1])])
 
-
+    # create the rebin group: age_bins
         age_bins=[]
         i=0
         j=0
@@ -107,7 +111,17 @@ def cases_per_population_by_age(input_data):
                 else: # int(data_age_hos[i][1])>int(data_age_pop[j][1]):
                     j+=1
 
-            elif data_age_hos[i][0] > data_age_pop[j][0]:
+            elif data_age_hos[i][0] < data_age_pop[j][0]:
+                if data_age_hos[i][1]< data_age_pop[j][1]:
+                    raise ValueError('rebin fail')
+                elif data_age_hos[i][1] > data_age_pop[j][1]:
+                    j+=1
+                else: # age_hos_i[1]==age_pop_j[1]:
+                    age_bins.append('-'.join([str(data_age_hos[i][0]),str(data_age_hos[i][1])]))
+                    i+=1
+                    j+=1
+
+            else: # data_age_hos[i][0] > data_age_pop[j][0]:
                 if data_age_hos[i][1] > data_age_pop[j][1]:
                     raise ValueError('rebin fail')
                 elif data_age_hos[i][1]< data_age_pop[j][1]:
@@ -117,17 +131,7 @@ def cases_per_population_by_age(input_data):
                     i+=1
                     j+=1
 
-
-            else: # data_age_hos[i][0] < data_age_pop[j][0]:
-                if data_age_hos[i][1]< data_age_pop[j][1]:
-                    raise ValueError('rebin fail')
-                elif data_age_hos[i][1] > data_age_pop[j][1]:
-                    j+=1
-                else: # age_hos_i[1]==age_pop_j[1]:
-                    age_bins.append('-'.join([str(data_age_hos[i][0]),str(data_age_hos[i][1])]))
-                    i+=1
-                    j+=1
-        # recover the original 
+        # recover the original data in the file
         a=age_hos[-1].split('-')
         a[-1]=''
         age_hos[-1]='-'.join(a)
@@ -138,7 +142,7 @@ def cases_per_population_by_age(input_data):
         age_pop[-1]='-'.join(b)
         input_data['metadata']['age_binning']['population']=age_pop
 
-        # get result: rebin of age groups
+        # get result
         c=age_bins[-1].split('-')
         c[-1]=''
         age_bins[-1]='-'.join(c)
@@ -146,18 +150,18 @@ def cases_per_population_by_age(input_data):
     # create the list of date and total of confirmed epidemiology
     age_start=0
     age_end=0
-    i=0
     age_pop_start=0
     age_pop_end=0
     data_pop=0
     data_con=0
+    i=0
+    j=0
+    k=0
 
-
-
-    result = {i: [] for i in age_bins}
+    result = {age_key:[] for age_key in age_bins}
 
     for dates, values in input_data['evolution'].items():
-        # raise error when the age group is not provided
+        # the age group is not provided, raise error
         if 'age' not in values['epidemiology']['confirmed']['total']:
             raise NotImplementedError('the age group of confirmed epidemiology is not provided')
 
@@ -166,7 +170,8 @@ def cases_per_population_by_age(input_data):
         or values['epidemiology']['confirmed']['total']['age']==[]\
         or None in values['epidemiology']['confirmed']['total']['age']:
             continue
-        # calculate the values of new age ranges
+
+        # create the new bins in new age ranges
         for i in range(len(age_bins)):
             age_start=age_bins[i].split('-')[0]
             age_end=age_bins[i].split('-')[1]
@@ -179,6 +184,7 @@ def cases_per_population_by_age(input_data):
                 if age_pop[k].split('-')[1]==age_end:
                     age_pop_end=k+1
 
+        # calculate the sum of the values in new age ranges
             data_con=sum(values["epidemiology"]["confirmed"]["total"]["age"][age_pop_start:age_pop_end])
             if None in input_data["region"]["population"]["age"]:
                 break
