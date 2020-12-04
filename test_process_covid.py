@@ -12,8 +12,8 @@ from process_covid import (load_covid_data,
 
 # test json file
 def test_load_covid_data():
-    data_json = process_covid.load_covid_data('covid_data/ER-Mi-EV_2020-03-16_2020-04-24.json')
-    assert data_json is not None
+    data_er = process_covid.load_covid_data('covid_data/ER-Mi-EV_2020-03-16_2020-04-24.json')
+    assert data_er is not None
 
 
 
@@ -23,10 +23,10 @@ def test_rebin():
     B = ['0-19', '20-39', '40-']
     result_correct=['0-19', '20-39', '40-']
 
-    input_data=process_covid.load_covid_data('covid_data/ER-Mi-EV_2020-03-16_2020-04-24.json')
-    input_data['metadata']['age_binning']['hospitalizations']=A
-    input_data['metadata']['age_binning']['population']=B
-    result_original=cases_per_population_by_age(input_data)
+    data_er=process_covid.load_covid_data('covid_data/ER-Mi-EV_2020-03-16_2020-04-24.json')
+    data_er['metadata']['age_binning']['hospitalizations']=A
+    data_er['metadata']['age_binning']['population']=B
+    result_original=cases_per_population_by_age(data_er)
     age_bins_original=[]
     for key in result_original:
         age_bins_original.append(key)
@@ -42,22 +42,22 @@ def test_rebin():
     A = ['0-14', '15-29', '30-44', '45-']
     B = ['0-19', '20-39', '40-']
 
-    input_data=process_covid.load_covid_data('covid_data/ER-Mi-EV_2020-03-16_2020-04-24.json')
-    input_data['metadata']['age_binning']['hospitalizations']=A
-    input_data['metadata']['age_binning']['population']=B
+    data_er=process_covid.load_covid_data('covid_data/ER-Mi-EV_2020-03-16_2020-04-24.json')
+    data_er['metadata']['age_binning']['hospitalizations']=A
+    data_er['metadata']['age_binning']['population']=B
     with pytest.raises(ValueError):
-        assert list(process_covid.cases_per_population_by_age(input_data).keys())
+        assert list(process_covid.cases_per_population_by_age(data_er).keys())
 
 
 
 
 def test_hospital_vs_confirmed():
-    input_data = process_covid.load_covid_data('covid_data/ER-Mi-EV_2020-03-16_2020-04-24.json')
-    result = process_covid.hospital_vs_confirmed(input_data)
+    data_er = process_covid.load_covid_data('covid_data/ER-Mi-EV_2020-03-16_2020-04-24.json')
+    result = process_covid.hospital_vs_confirmed(data_er)
     try:
-        assert ((result[0][0],result[1][0])==('2020-03-16',input_data['evolution']['2020-03-16']['hospitalizations']['hospitalized'] ['new']['all']/input_data['evolution']['2020-03-16']['epidemiology']['confirmed']['new'] ['all']) and\
-    (result[0][3],result[1][3])== ('2020-03-19',input_data['evolution']['2020-03-19']['hospitalizations']['hospitalized'] ['new']['all']/input_data['evolution']['2020-03-19']['epidemiology']['confirmed']['new'] ['all']) and\
-    (result[0][10],result[1][10])== ('2020-03-26',input_data['evolution']['2020-03-26']['hospitalizations']['hospitalized'] ['new']['all']/input_data['evolution']['2020-03-26']['epidemiology']['confirmed']['new'] ['all']))
+        assert ((result[0][0],result[1][0])==('2020-03-16',data_er['evolution']['2020-03-16']['hospitalizations']['hospitalized'] ['new']['all']/data_er['evolution']['2020-03-16']['epidemiology']['confirmed']['new'] ['all']) and\
+    (result[0][3],result[1][3])== ('2020-03-19',data_er['evolution']['2020-03-19']['hospitalizations']['hospitalized'] ['new']['all']/data_er['evolution']['2020-03-19']['epidemiology']['confirmed']['new'] ['all']) and\
+    (result[0][10],result[1][10])== ('2020-03-26',data_er['evolution']['2020-03-26']['hospitalizations']['hospitalized'] ['new']['all']/data_er['evolution']['2020-03-26']['epidemiology']['confirmed']['new'] ['all']))
         print('correct output')
     except NotImplementedError:
         print('wrong output')
@@ -101,10 +101,14 @@ def test_generate_data_plot_confirm_missing_data():
 def test_generate_data_plot_confirmed_wrong_argument():
     data_er = process_covid.load_covid_data('covid_data/ER-Mi-EV_2020-03-16_2020-04-24.json')
     # sex or max_age allowed at the same time
-    with raises(NotImplementedError):
-        process_covid.generate_data_plot_confirmed(data_er, 'male',60, 'total')
-        process_covid.generate_data_plot_confirmed(data_er, 4, None, 'total')
-        process_covid.generate_data_plot_confirmed(data_er, None, [], 'total')
+    try:
+        with raises(NotImplementedError):
+            process_covid.generate_data_plot_confirmed(data_er, 'male',60, 'total')
+            process_covid.generate_data_plot_confirmed(data_er, 4, None, 'total')
+            process_covid.generate_data_plot_confirmed(data_er, None, [], 'total')
+        print('wrong argument can be processed correctly')
+    except NotImplementedError:
+        print('the result is not correct because of wrong argument')
 
 
 
@@ -151,8 +155,8 @@ def test_compute_running_average():
         input4 = [2,None,4]
         output4 = []
         output4_test =[None, 2.0, None]
-        output4=compute_running_average(input4,2)
-        assert output4 == output4_test
+        with raises(NotImplementedError):
+            process_covid.compute_running_average(input4,2)
         print('correct output')
     except NotImplementedError:
         print('wrong output')

@@ -9,8 +9,9 @@ def load_covid_data(filepath):
         with open(filepath, 'r') as jason_file:
             input_data_as_string = jason_file.read()
             input_data = json.loads(input_data_as_string)
-        if not check_schema(input_data):
-            raise NotImplementedError("The file does not conform to the schema\n")
+        exist, false = check_schema(input_data)
+        if(exist == False):
+             raise Exception(false)
         return input_data
     except:
         raise NotImplementedError('The file is not json format')
@@ -19,14 +20,22 @@ def check_schema(data_json):
     # check "metadata","region","evolution"
     first_layer=["metadata","region","evolution"]
     for field_1 in first_layer:
-        if not isinstance(data_json[field_1],dict):
-            return False, "%s should be a dict" % field_1 
+        if field_1 in data_json:
+            if not isinstance(data_json[field_1],dict):
+                return False, "%s should be a dict" % field_1 
+        else:
+            return False, "%s is not provided" % field_1
+
 
     # check 'time-range','age_binning'
     sub_metadata=['time-range','age_binning']
     for field_sub_1 in sub_metadata:
-        if not isinstance(data_json['metadata'][field_sub_1],dict):
-            return False, "%s should be a dict" % field_sub_1
+        if field_sub_1 in data_json['metadata']:
+            if not isinstance(data_json['metadata'][field_sub_1],dict):
+                return False, "%s should be a dict" % field_sub_1
+        else:
+            return False, "%s is not provided" % field_sub_1
+
     
     # check "hospitalizations" and "population" in 'age_binning'
     sub_age_binning=["hospitalizations" , "population"]
@@ -43,6 +52,7 @@ def check_schema(data_json):
     # check key(date),"hospitalizations","epidemiology","weather" in "evolution"
     sub_evolution = ["hospitalizations","epidemiology", "weather", "government_response"]
     sub_epidemiology = ['confirmed','deceased','tested']
+    
     for date,v in data_json["evolution"].items():
         if not date:
             return False, "date is wrong"
@@ -63,9 +73,11 @@ def check_schema(data_json):
             if sub not in v['epidemiology']:
                 return False, "%s is not in epidemiology" %sub
             else:
-                if not isinstance(sub, dict):
+                if not isinstance(v['epidemiology'][sub], dict):
                     return False, "format of %s is wrong" % sub
-    return True
+
+    
+    return True, None
 
 
 def cases_per_population_by_age(input_data):
@@ -148,6 +160,7 @@ def cases_per_population_by_age(input_data):
         age_bins[-1]='-'.join(c)
         
     # create the list of date and total of confirmed epidemiology
+    result = {age_key:[] for age_key in age_bins}
     age_start=0
     age_end=0
     age_pop_start=0
@@ -157,8 +170,6 @@ def cases_per_population_by_age(input_data):
     i=0
     j=0
     k=0
-
-    result = {age_key:[] for age_key in age_bins}
 
     for dates, values in input_data['evolution'].items():
         # the age group is not provided, raise error
@@ -185,13 +196,14 @@ def cases_per_population_by_age(input_data):
                     age_pop_end=k+1
 
         # calculate the sum of the values in new age ranges
-            data_con=sum(values["epidemiology"]["confirmed"]["total"]["age"][age_pop_start:age_pop_end])
+            data_con=sum(input_data['evolution'][dates]["epidemiology"]["confirmed"]["total"]["age"][age_pop_start:age_pop_end])
             if None in input_data["region"]["population"]["age"]:
                 break
             data_pop=sum(input_data["region"]["population"]["age"][age_pop_start:age_pop_end])
             # calculate the ratios by date in age ranges
+            
             result.get(age_bins[i]).append((dates, data_con * 100 / data_pop))
-        return result
+    return result
 
 
 
@@ -288,8 +300,8 @@ def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=.
         raise NotImplementedError('at most one of sex or max_age allowed at a time')
     if not sex and not max_ages:
         raise NotImplementedError('both of sex and max_age are not provided')
-    if sex > 1:
-        raise Exception('sex error')
+    if sex>1:
+        raise NotImplementedError('sex data are error')
 
     # set default status and linestyle
     if status != 'new':
@@ -332,14 +344,17 @@ def create_confirmed_plot(input_data, sex=False, max_ages=[], status=..., save=.
                     age_label=int(age_groups[i].split('-')[1])
             label_values = 'younger than'+' '+str(age_label)+' '+status
             date,value = generate_data_plot_confirmed(input_data,None,max_age,status)
-            if max_age< 75:
-                color_value = 'purple'
-            if max_age < 50:
+            
+            if 50<=max_age<75:
+                color_value='purple'
+            if 25<=max_age<50:
                 color_value = 'orange'
-            if max_age< 25:
+            if 0<=max_age<25:
                 color_value = 'green'
-            else:
-                color_value = 'pink'
+            if 75<=max_age<150:
+                color_value='pink'
+
+        
             
             plt.plot(date,value,label=label_values,color=color_value,linestyle=linestyle_value)
         save_path = input_data['region']['name'] + '_evolution_cases_age.png'
@@ -392,6 +407,9 @@ def compute_running_average(data,window):
         if data[i]==None:
             for j in range(-int((window-1)/2),int((window-1)/2)+1):
                 data[i]=0
+                if data[i+j]==None:
+                    data[i+j]=0
+                    continue 
                 sum_rainfall+=data[i+j]
                 average_rainfall=sum_rainfall/(window)
             list_sum_rainfall.append(average_rainfall)
@@ -439,5 +457,7 @@ def count_high_rain_low_tests_days(input_data):
             data_rain_inc+=1
             if data_test_deri[i] != None and data_test_deri[i] < 0:
                 data_rain_inc_test_dec = data_rain_inc_test_dec+1
+    if data_rain_inc==0:
+        raise NotImplementedError("the number of increasing rain days equals zero")
     return data_rain_inc_test_dec/data_rain_inc
 
