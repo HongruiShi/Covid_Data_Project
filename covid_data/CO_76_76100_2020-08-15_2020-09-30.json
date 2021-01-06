@@ -1,0 +1,6449 @@
+{
+  "region": {
+    "name": "Colombia-Valle Del Cauca-Bol\u00edvar",
+    "key": "CO_76_76100",
+    "latitude": 4.338611,
+    "longitude": -76.184722,
+    "elevation": 744,
+    "area": {
+      "total": null,
+      "rural": null,
+      "urban": null
+    },
+    "population": {
+      "total": null,
+      "male": null,
+      "female": null,
+      "age": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "rural": null,
+      "urban": null
+    },
+    "open_street_maps": null,
+    "noaa_station": 80211099999.0,
+    "noaa_distance": 48.148889
+  },
+  "evolution": {
+    "2020-08-15": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.701389,
+          "min": 18.152778,
+          "max": 27.451389
+        },
+        "rainfall": 4.390571,
+        "snowfall": null,
+        "dew_point": 18.0,
+        "relative_humidity": 75.952809
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-16": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": 1,
+            "male": null,
+            "female": 1
+          },
+          "total": {
+            "all": 4,
+            "male": 3,
+            "female": 1
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": 0,
+            "male": null,
+            "female": 0
+          },
+          "total": {
+            "all": 0,
+            "male": 0,
+            "female": 0
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": 0,
+            "male": null,
+            "female": 0
+          },
+          "total": {
+            "all": 1,
+            "male": 1,
+            "female": 0
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.041667,
+          "min": 18.826389,
+          "max": 27.25
+        },
+        "rainfall": 1.36525,
+        "snowfall": null,
+        "dew_point": 18.430556,
+        "relative_humidity": 75.795917
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-17": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.263889,
+          "min": 18.444444,
+          "max": 26.041667
+        },
+        "rainfall": 11.3665,
+        "snowfall": null,
+        "dew_point": 18.555556,
+        "relative_humidity": 79.90835899999998
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-18": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": 1,
+            "male": 1,
+            "female": null
+          },
+          "total": {
+            "all": 5,
+            "male": 4,
+            "female": 1
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": 0,
+            "male": 0,
+            "female": null
+          },
+          "total": {
+            "all": 0,
+            "male": 0,
+            "female": 0
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": 0,
+            "male": 0,
+            "female": null
+          },
+          "total": {
+            "all": 1,
+            "male": 1,
+            "female": 0
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.527778,
+          "min": 18.770833,
+          "max": 27.451389
+        },
+        "rainfall": 10.795,
+        "snowfall": null,
+        "dew_point": 18.4375,
+        "relative_humidity": 74.167847
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-19": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 21.541667,
+          "min": 18.666667,
+          "max": 25.666667
+        },
+        "rainfall": 4.136571,
+        "snowfall": null,
+        "dew_point": 18.722222,
+        "relative_humidity": 84.98706899999998
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-20": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.097222,
+          "min": 18.465278,
+          "max": 27.326389
+        },
+        "rainfall": 20.85975,
+        "snowfall": null,
+        "dew_point": 18.527778,
+        "relative_humidity": 76.32112099999998
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-21": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": 1,
+            "male": null,
+            "female": 1
+          },
+          "total": {
+            "all": 6,
+            "male": 4,
+            "female": 2
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": 0,
+            "male": null,
+            "female": 0
+          },
+          "total": {
+            "all": 0,
+            "male": 0,
+            "female": 0
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": 0,
+            "male": null,
+            "female": 0
+          },
+          "total": {
+            "all": 1,
+            "male": 1,
+            "female": 0
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.222222,
+          "min": 19.222222,
+          "max": 26.715278
+        },
+        "rainfall": 5.8420000000000005,
+        "snowfall": null,
+        "dew_point": 18.708333,
+        "relative_humidity": 77.000004
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-22": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.645833,
+          "min": 18.770833,
+          "max": 26.506944
+        },
+        "rainfall": 9.144,
+        "snowfall": null,
+        "dew_point": 17.965278,
+        "relative_humidity": 76.246827
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-23": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 24.15873,
+          "min": 19.349206,
+          "max": 29.119048
+        },
+        "rainfall": 1.995714,
+        "snowfall": null,
+        "dew_point": 18.126984,
+        "relative_humidity": 71.167377
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-24": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.791667,
+          "min": 17.909722,
+          "max": 27.895833000000003
+        },
+        "rainfall": 13.462,
+        "snowfall": null,
+        "dew_point": 17.527778,
+        "relative_humidity": 73.835823
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-25": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.548611,
+          "min": 18.801587,
+          "max": 27.555556
+        },
+        "rainfall": 1.651,
+        "snowfall": null,
+        "dew_point": 17.659722,
+        "relative_humidity": 76.21504
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-26": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.159722,
+          "min": 18.583333,
+          "max": 27.152778
+        },
+        "rainfall": 7.01675,
+        "snowfall": null,
+        "dew_point": 17.479167,
+        "relative_humidity": 73.00948299999997
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-27": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 24.092593,
+          "min": 21.037037,
+          "max": 28.101852
+        },
+        "rainfall": 0.0,
+        "snowfall": null,
+        "dew_point": 18.62037,
+        "relative_humidity": 71.962713
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-28": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": 0,
+            "male": 0,
+            "female": null
+          },
+          "total": {
+            "all": 6,
+            "male": 4,
+            "female": 2
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": 0,
+            "male": 0,
+            "female": null
+          },
+          "total": {
+            "all": 0,
+            "male": 0,
+            "female": 0
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": 1,
+            "male": 1,
+            "female": null
+          },
+          "total": {
+            "all": 2,
+            "male": 2,
+            "female": 0
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.944444,
+          "min": 18.944444,
+          "max": 28.8125
+        },
+        "rainfall": 0.8255,
+        "snowfall": null,
+        "dew_point": 17.708333,
+        "relative_humidity": 69.258776
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-29": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.236111,
+          "min": 19.006944,
+          "max": 27.083333000000003
+        },
+        "rainfall": 4.717143,
+        "snowfall": null,
+        "dew_point": 17.861110999999994,
+        "relative_humidity": 78.172287
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-30": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": 0,
+            "male": 0,
+            "female": null
+          },
+          "total": {
+            "all": 6,
+            "male": 4,
+            "female": 2
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": 0,
+            "male": 0,
+            "female": null
+          },
+          "total": {
+            "all": 0,
+            "male": 0,
+            "female": 0
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": 1,
+            "male": 1,
+            "female": null
+          },
+          "total": {
+            "all": 3,
+            "male": 3,
+            "female": 0
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 21.229167,
+          "min": 17.326389000000002,
+          "max": 25.75
+        },
+        "rainfall": 7.52475,
+        "snowfall": null,
+        "dew_point": 17.458333,
+        "relative_humidity": 79.705058
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-08-31": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.125,
+          "min": 18.236111,
+          "max": 28.159722
+        },
+        "rainfall": 0.127,
+        "snowfall": null,
+        "dew_point": 17.368056,
+        "relative_humidity": 70.767241
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-01": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.875,
+          "min": 18.472222,
+          "max": 27.854167
+        },
+        "rainfall": 0.762,
+        "snowfall": null,
+        "dew_point": 17.430556,
+        "relative_humidity": 72.673514
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-02": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": 0,
+            "male": null,
+            "female": 0
+          },
+          "total": {
+            "all": 6,
+            "male": 4,
+            "female": 2
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": 0,
+            "male": null,
+            "female": 0
+          },
+          "total": {
+            "all": 0,
+            "male": 0,
+            "female": 0
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": 1,
+            "male": null,
+            "female": 1
+          },
+          "total": {
+            "all": 4,
+            "male": 3,
+            "female": 1
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.458333,
+          "min": 18.111111,
+          "max": 27.048611
+        },
+        "rainfall": 13.0175,
+        "snowfall": null,
+        "dew_point": 17.069444,
+        "relative_humidity": 73.619923
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-03": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.361111,
+          "min": 18.201389,
+          "max": 27.986111
+        },
+        "rainfall": 4.7625,
+        "snowfall": null,
+        "dew_point": 16.993056,
+        "relative_humidity": 69.630899
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-04": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.513889,
+          "min": 18.5,
+          "max": 27.472222
+        },
+        "rainfall": 16.425333,
+        "snowfall": null,
+        "dew_point": 18.111111,
+        "relative_humidity": 76.83281600000002
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-05": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 24.986111,
+          "min": 19.381944,
+          "max": 29.652778
+        },
+        "rainfall": 4.191,
+        "snowfall": null,
+        "dew_point": 17.291667,
+        "relative_humidity": 63.54278299999999
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-06": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 24.361111,
+          "min": 19.736111,
+          "max": 28.840278
+        },
+        "rainfall": 11.8745,
+        "snowfall": null,
+        "dew_point": 16.805556,
+        "relative_humidity": 64.103183
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-07": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.409722,
+          "min": 18.381944,
+          "max": 27.236111
+        },
+        "rainfall": 3.048,
+        "snowfall": null,
+        "dew_point": 16.597222,
+        "relative_humidity": 67.007147
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-08": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 20.840278,
+          "min": 17.826389000000006,
+          "max": 24.638889
+        },
+        "rainfall": 13.843,
+        "snowfall": null,
+        "dew_point": 17.166667,
+        "relative_humidity": 80.666294
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-09": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.763889,
+          "min": 17.375,
+          "max": 27.5
+        },
+        "rainfall": 0.254,
+        "snowfall": null,
+        "dew_point": 16.618056,
+        "relative_humidity": 69.399035
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-10": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 24.305556,
+          "min": 19.305556,
+          "max": 28.75
+        },
+        "rainfall": 1.04775,
+        "snowfall": null,
+        "dew_point": 17.048610999999998,
+        "relative_humidity": 65.086972
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-11": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.979167,
+          "min": 19.291667,
+          "max": 28.5
+        },
+        "rainfall": 1.524,
+        "snowfall": null,
+        "dew_point": 17.548610999999998,
+        "relative_humidity": 69.293162
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-12": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 24.3125,
+          "min": 19.541667,
+          "max": 28.611111
+        },
+        "rainfall": 2.213429,
+        "snowfall": null,
+        "dew_point": 17.236110999999998,
+        "relative_humidity": 66.458389
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-13": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": 1,
+            "male": 1,
+            "female": null
+          },
+          "total": {
+            "all": 7,
+            "male": 5,
+            "female": 2
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": 0,
+            "male": 0,
+            "female": null
+          },
+          "total": {
+            "all": 0,
+            "male": 0,
+            "female": 0
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": 0,
+            "male": 0,
+            "female": null
+          },
+          "total": {
+            "all": 4,
+            "male": 3,
+            "female": 1
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.819444,
+          "min": 19.298611,
+          "max": 28.493056
+        },
+        "rainfall": 2.63525,
+        "snowfall": null,
+        "dew_point": 17.881944,
+        "relative_humidity": 70.537741
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-14": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.944444,
+          "min": 18.3125,
+          "max": 29.0
+        },
+        "rainfall": 0.0,
+        "snowfall": null,
+        "dew_point": 16.75,
+        "relative_humidity": 65.540315
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-15": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.777778,
+          "min": 18.909722,
+          "max": 28.125
+        },
+        "rainfall": 2.54,
+        "snowfall": null,
+        "dew_point": 17.347222,
+        "relative_humidity": 69.19595
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-16": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.604167,
+          "min": 17.979167,
+          "max": 27.375
+        },
+        "rainfall": 7.831666999999999,
+        "snowfall": null,
+        "dew_point": 17.25,
+        "relative_humidity": 72.40802099999998
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-17": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.611111,
+          "min": 18.416667,
+          "max": 26.402778
+        },
+        "rainfall": 15.348857,
+        "snowfall": null,
+        "dew_point": 17.763889000000006,
+        "relative_humidity": 75.222535
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-18": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.368056,
+          "min": 18.625,
+          "max": 27.326389
+        },
+        "rainfall": 6.5193330000000005,
+        "snowfall": null,
+        "dew_point": 18.0625,
+        "relative_humidity": 77.53709599999998
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-19": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.833333,
+          "min": 18.263889,
+          "max": 27.0625
+        },
+        "rainfall": 14.296570999999998,
+        "snowfall": null,
+        "dew_point": 18.069444,
+        "relative_humidity": 74.803678
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-20": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.020833,
+          "min": 18.965278,
+          "max": 27.965278
+        },
+        "rainfall": 1.651,
+        "snowfall": null,
+        "dew_point": 18.256944,
+        "relative_humidity": 75.27548399999998
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-21": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.361111,
+          "min": 19.020833,
+          "max": 27.423611
+        },
+        "rainfall": 2.576286,
+        "snowfall": null,
+        "dew_point": 18.0625,
+        "relative_humidity": 73.652406
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-22": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 24.638889,
+          "min": 19.034722,
+          "max": 29.583333000000003
+        },
+        "rainfall": 0.635,
+        "snowfall": null,
+        "dew_point": 17.013889000000002,
+        "relative_humidity": 64.025563
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-23": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": 0,
+            "male": 0,
+            "female": null
+          },
+          "total": {
+            "all": 7,
+            "male": 5,
+            "female": 2
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": 0,
+            "male": 0,
+            "female": null
+          },
+          "total": {
+            "all": 0,
+            "male": 0,
+            "female": 0
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": 1,
+            "male": 1,
+            "female": null
+          },
+          "total": {
+            "all": 5,
+            "male": 4,
+            "female": 1
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.069444,
+          "min": 19.319444,
+          "max": 28.1875
+        },
+        "rainfall": 3.701143,
+        "snowfall": null,
+        "dew_point": 17.576389000000002,
+        "relative_humidity": 72.289495
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-24": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.666667,
+          "min": 18.951389,
+          "max": 27.888889
+        },
+        "rainfall": 3.302,
+        "snowfall": null,
+        "dew_point": 17.402778,
+        "relative_humidity": 68.800391
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-25": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.930556,
+          "min": 18.736111,
+          "max": 28.909722
+        },
+        "rainfall": 2.25425,
+        "snowfall": null,
+        "dew_point": 16.743056,
+        "relative_humidity": 65.583907
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-26": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.145833,
+          "min": 18.875,
+          "max": 27.1875
+        },
+        "rainfall": 9.0805,
+        "snowfall": null,
+        "dew_point": 16.902778,
+        "relative_humidity": 68.984409
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-27": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.849206,
+          "min": 19.238095,
+          "max": 28.587302
+        },
+        "rainfall": 3.084286,
+        "snowfall": null,
+        "dew_point": 17.650794,
+        "relative_humidity": 68.637579
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-28": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.555556,
+          "min": 18.833333,
+          "max": 28.347222
+        },
+        "rainfall": 2.286,
+        "snowfall": null,
+        "dew_point": 17.298610999999998,
+        "relative_humidity": 69.211137
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-29": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 23.118056,
+          "min": 18.972222,
+          "max": 27.916667
+        },
+        "rainfall": 1.481667,
+        "snowfall": null,
+        "dew_point": 17.416667,
+        "relative_humidity": 71.947343
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    },
+    "2020-09-30": {
+      "hospitalizations": {
+        "hospitalized": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "intensive_care": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "ventilator": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "current": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "epidemiology": {
+        "confirmed": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "deceased": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "recovered": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        },
+        "tested": {
+          "new": {
+            "all": null,
+            "male": null,
+            "female": null
+          },
+          "total": {
+            "all": null,
+            "male": null,
+            "female": null
+          }
+        }
+      },
+      "weather": {
+        "temperature": {
+          "average": 22.125,
+          "min": 18.347222,
+          "max": 26.4375
+        },
+        "rainfall": 9.724571,
+        "snowfall": null,
+        "dew_point": 17.548610999999998,
+        "relative_humidity": 75.904454
+      },
+      "government_response": {
+        "school_closing": null,
+        "workplace_closing": null,
+        "cancel_public_events": null,
+        "restrictions_on_gatherings": null,
+        "public_transport_closing": null,
+        "stay_at_home_requirements": null,
+        "restrictions_on_internal_movement": null,
+        "international_travel_controls": null,
+        "income_support": null,
+        "debt_relief": null,
+        "fiscal_measures": null,
+        "international_support": null,
+        "public_information_campaigns": null,
+        "testing_policy": null,
+        "contact_tracing": null,
+        "emergency_investment_in_healthcare": null,
+        "investment_in_vaccines": null,
+        "stringency_index": null
+      }
+    }
+  },
+  "metadata": {
+    "age_binning": {
+      "hospitalizations": [],
+      "population": [
+        "0-9",
+        "10-19",
+        "20-29",
+        "30-39",
+        "40-49",
+        "50-59",
+        "60-69",
+        "70-79",
+        "80-"
+      ]
+    },
+    "time-range": {
+      "start_date": "2020-08-15",
+      "stop_date": "2020-09-30"
+    }
+  }
+}
